@@ -84,4 +84,26 @@ Includes simple rate-limiting and duplicate-like prevention.
     -  When deleting an article with associated comments, either:
     1) First remove the comments before deleting the article, and notify the client that the article had comments linked to it.
     2) Configure cascade delete so that associated comments are removed automatically when the article is deleted.
+
+---
+
+## **Running Locally**
+Follow these steps to run the application on your local machine:
+
+1. **Clone the repository**
+   ```bash
+   git clone git@github.com:hasanbeyli/Commentator.git
+   cd commentator-api
+* Ensure you have Java and Gradle installed
+* Java 17+
+* Gradle (or use the included Gradle wrapper ./gradlew)
+* Build the project
+* ./gradlew clean build
+* Run the application
+* ./gradlew bootRun
+* Or using the generated JAR:
+* java -jar build/libs/commentator-0.0.1-SNAPSHOT.jar
+* Access the application
+* Swagger UI: http://localhost:8080/swagger-ui.html
+* H2 Console: http://localhost:8080/h2-console
 ---
